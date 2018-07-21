@@ -37,7 +37,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #HEROKU CONFIG->->->->
 
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=FALSE,  cast=bool)
+DEBUG = config('DEBUG',  cast=bool)
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 DATABASES = {
     'default': dj_database_url.config(
